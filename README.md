@@ -17,7 +17,7 @@ I created advert_year based on the public_reference column and then derived vehi
 I explored key numerical and categorical variables to understand their influence on car price. Price showed a strong right-skewed distribution, confirming the need for log transformation. Both mileage and vehicle_age displayed clear negative relationships with price, while body type and fuel type showed meaningful variations across segments. These patterns match real automotive market behaviour and help validate the quality of the cleaned dataset.
 
 ### Price Distribution Plot(Before Log Transform)
-![pricedistribution]("images/price_distribution.png")
+![Price Distribution](images/price_distribution.png)
 
 ## Feature Engineering
 I created a combined make_model feature to capture the effect of brand and model variations on price. I applied frequency encoding to this feature so that common variants receive higher values. The final feature set includes mileage, vehicle_age, year_of_registration, make_model_freq, body_type, fuel_type and vehicle_condition. I applied a log transformation to the target variable to stabilise variance and improve model performance.
