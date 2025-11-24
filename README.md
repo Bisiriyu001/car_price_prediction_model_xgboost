@@ -17,7 +17,7 @@ I created advert_year based on the public_reference column and then derived vehi
 I explored key numerical and categorical variables to understand their influence on car price. Price showed a strong right-skewed distribution, confirming the need for log transformation. Both mileage and vehicle_age displayed clear negative relationships with price, while body type and fuel type showed meaningful variations across segments. These patterns match real automotive market behaviour and help validate the quality of the cleaned dataset.
 
 ### Price Distribution Plot(Before Log Transform)
-![pricedistribution]("price_distribution")
+![Price Distribution](images/price_distribution.png)
 
 ## Feature Engineering
 I created a combined make_model feature to capture the effect of brand and model variations on price. I applied frequency encoding to this feature so that common variants receive higher values. The final feature set includes mileage, vehicle_age, year_of_registration, make_model_freq, body_type, fuel_type and vehicle_condition. I applied a log transformation to the target variable to stabilise variance and improve model performance.
@@ -36,7 +36,7 @@ Both models were evaluated on the same test set using MAE and R². Linear regres
 I extracted feature importance from the trained XGBoost model. The most influential predictors were vehicle_age, mileage and the frequency-encoded make_model variable. These results align with real-world car valuation practices, where age, mileage and brand-model combinations significantly affect price. Body type and fuel type also contributed meaningfully, reinforcing the model’s interpretability and domain alignment.
 
 ### Feature Importance Plot (Top 15 Features)
-![featureImp]('images/feature')
+![featureImp](images/feature.png)
 
 ## Business Value
 This project demonstrates how machine learning can support pricing decisions for dealerships, valuation platforms and online marketplaces. A reliable pricing model improves consistency, helps identify underpriced or overpriced vehicles and strengthens customer trust. The workflow also shows how data science practices can convert raw advert data into meaningful predictive insights.
