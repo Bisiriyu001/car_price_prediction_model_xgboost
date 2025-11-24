@@ -36,7 +36,7 @@ Both models were evaluated on the same test set using MAE and R². Linear regres
 I extracted feature importance from the trained XGBoost model. The most influential predictors were vehicle_age, mileage and the frequency-encoded make_model variable. These results align with real-world car valuation practices, where age, mileage and brand-model combinations significantly affect price. Body type and fuel type also contributed meaningfully, reinforcing the model’s interpretability and domain alignment.
 
 ### Feature Importance Plot (Top 15 Features)
-![featureImp]('images/feature.png')
+![featureImp](images/feature.png)
 
 ## Business Value
 This project demonstrates how machine learning can support pricing decisions for dealerships, valuation platforms and online marketplaces. A reliable pricing model improves consistency, helps identify underpriced or overpriced vehicles and strengthens customer trust. The workflow also shows how data science practices can convert raw advert data into meaningful predictive insights.
